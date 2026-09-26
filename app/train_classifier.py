@@ -1,21 +1,3 @@
-"""
-Trains the land-use classifier and writes data/model.pkl.
-
-Primary path: train on the real labeled tiles GalaxEye provided
-(candidate_tiles/<ClassName>/*.png, a 7-class EuroSAT subset: Forest,
-River, Residential, Industrial, AnnualCrop, SeaLake, Highway). Point
---data-dir at the `candidate_tiles` folder from the assignment zip.
-
-Fallback path: if no --data-dir is given, fall back to a small synthesized
-dataset (see synthesize_dataset() below) so the repo is still runnable
-standalone without the (non-redistributed) dataset attached. This fallback
-is honestly weaker -- it exists so `git clone && run` still works, not
-because it's how the shipped model was actually trained.
-
-Usage:
-    python3 app/train_classifier.py --data-dir /path/to/candidate_tiles
-    python3 app/train_classifier.py                # synthetic fallback
-"""
 from __future__ import annotations
 import argparse
 import sys
