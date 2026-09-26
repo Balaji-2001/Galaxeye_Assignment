@@ -1,17 +1,3 @@
-"""
-GalaxEye take-home -- Part 2 working slice.
-
-Endpoints:
-  POST /tiles           ingest a tile image, classify it, store the result
-  GET  /tiles           query stored results (filter by label / confidence)
-  GET  /tiles/{id}       fetch a single stored result
-  GET  /stats             aggregate counts, useful for the "is it still
-                           working" monitoring question in Part 3
-  GET  /health             liveness check
-
-Everything below runs fully offline: no network calls anywhere on the
-request path (see design_note.md).
-"""
 from __future__ import annotations
 import io
 from datetime import datetime, timezone
