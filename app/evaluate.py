@@ -1,12 +1,3 @@
-"""
-Evaluates the trained model against GalaxEye's held-out eval_set +
-eval_labels.csv (a genuinely separate set from candidate_tiles/, not just a
-train/test split of the same folder). This is the real accuracy number
-referenced in design_note.md / part3_answers.md.
-
-Usage:
-    python3 app/evaluate.py --eval-dir /path/to/eval_set --labels-csv /path/to/eval_labels.csv
-"""
 from __future__ import annotations
 import argparse
 import csv
